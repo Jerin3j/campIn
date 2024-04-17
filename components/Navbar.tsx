@@ -1,8 +1,12 @@
+'use client'
 import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
+import { useState } from "react"
+import NavMenu from "./NavMenu"
 const Navbar = () => {
+  const [menu, setMenu] = useState<boolean>(false)
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
         <Link href='/'>
@@ -26,14 +30,7 @@ const Navbar = () => {
           varient = 'btn_dark_green'
           />
         </div>
-
-        <Image 
-         src={'menu.svg'}
-         alt='menu'
-         width={32}
-         height={32}
-         className="inline-block cursor-pointer lg:hidden"
-         />
+        <NavMenu/>
     </nav>
   )
 }
