@@ -1,7 +1,7 @@
 // NAVIGATION
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
-    { href: '/', key: 'how_ozotravels_work', label: 'How OZO Travels Work?' },
+    { href: '/', key: 'how_campin_work', label: 'How CampIn Works?' },
     { href: '/', key: 'services', label: 'Services' },
     { href: '/', key: 'pricing ', label: 'Pricing ' },
     { href: '/', key: 'contact_us', label: 'Contact Us' },
@@ -29,7 +29,7 @@ export const NAV_LINKS = [
       icon: '/calendar.svg',
       variant: 'green',
       description:
-        "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+        "Schedule an adventure with friends. On holidays, there are many interesting offers from CampIn. That way, there's no more discussion",
     },
     {
       title: 'Technology using augment reality',
@@ -52,7 +52,7 @@ export const NAV_LINKS = [
     {
       title: 'Learn More',
       links: [
-        'About Hilink',
+        'About CampIn',
         'Press Releases',
         'Environment',
         'Jobs',
@@ -62,7 +62,7 @@ export const NAV_LINKS = [
     },
     {
       title: 'Our Community',
-      links: ['Climbing xixixi', 'traveltogether', 'weozoriders'],
+      links: ['Climbing xixixi', 'traveltogether', 'wecampinriders'],
     },
   ];
   
@@ -70,7 +70,7 @@ export const NAV_LINKS = [
     title: 'Contact Us',
     links: [
       { label: 'Admin Officer', value: '123-456-7890' },
-      { label: 'Email Officer', value: 'ozotravels@gmail.com' },
+      { label: 'Email Officer', value: 'campin@gmail.com' },
     ],
   };
   

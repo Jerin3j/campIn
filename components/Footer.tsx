@@ -2,6 +2,7 @@ import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import CampIn from './CampIn'
 
 type FooterColumnProps ={
   title: string,
@@ -23,7 +24,7 @@ const Footer = () => {
         <div className="flex flex-col items-start justify-center gap-[10%]
         md:flex-row">
           <Link href={'/'} className='mb-10'>
-           <Image src={'hilink-logo.svg'} alt='logo' width={74} height={29}/>
+           <CampIn/>
           </Link>
 
           <div className="FooterTexts flex flex-wrap gap-10 sm:justify-between md:flex-1">
@@ -71,7 +72,7 @@ const Footer = () => {
         </div>
         <div className="">
           <p className="regular 14 w-full text-center text-gray-30">
-            &copy; OZO Travels 2024 | Designed by
+            &copy; CampIn 2024 | Designed by
              <Link href={'https://github.com/jerin3j'} className='text-blue-500'> Jerin 3J</Link>
           </p>
         </div>

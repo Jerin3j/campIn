@@ -20,7 +20,7 @@ const NavMenu = () => {
           }>
           <ul className='bg-white h-1/2 drop-shadow-xl w-96 rounded-xl '>
             {NAV_LINKS.map((link)=>(
-                <li className='regular-20 text-center pt-3 hide-scrollbar hover:text-blue-950 cursor-pointer'>
+                <li className='regular-20 text-center pt-3 hide-scrollbar hover:text-blue-950 cursor-pointer hover:underline'>
                   <Link href={'/'}>{link.label}</Link>
                   </li>
             ))}

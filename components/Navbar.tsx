@@ -5,12 +5,12 @@ import Link from "next/link"
 import Button from "./Button"
 import { useState } from "react"
 import NavMenu from "./NavMenu"
+import CampIn from "@/components/CampIn"
 const Navbar = () => {
-  const [menu, setMenu] = useState<boolean>(false)
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
         <Link href='/'>
-          <Image src='/hilink-logo.svg' alt="Logo" width={80} height={29}/>
+          <CampIn/>
         </Link>
 
         <ul className="hidden h-full gap-12 lg:flex">
@@ -30,7 +30,9 @@ const Navbar = () => {
           varient = 'btn_dark_green'
           />
         </div>
-        <NavMenu/>
+        <span className="lg:hidden">
+         <NavMenu/>
+       </span>
     </nav>
   )
 }
